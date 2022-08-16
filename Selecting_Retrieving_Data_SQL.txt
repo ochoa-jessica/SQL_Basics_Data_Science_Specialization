@@ -1,0 +1,46 @@
+We are using the Chinook database - https://www.sqlitetutorial.net/sqlite-sample-database/
+
+Retrieve all the records from the Employees table
+
+1. What is Robert King's mailing address? 
+
+SELECT *
+FROM employees
+WHERE FirstName = "Robert" AND LastName = "King"
+
+
+Output - 
+
+590 Columbia Boulevard West, Lethbridge, AB, CANADA T1K 5N8
+
+Retrieve the FirstName, LastName, Birthdate, Address, City, and State from the Employees table
+
+2. Which of the employees listed below has a birthdate of 3-3-1965?
+
+SELECT 
+    FirstName,
+    LastName,
+    BirthDate,
+    Address,
+    City,
+    State 
+FROM employees
+
+
+Output - 
+
+Steve
+
+Retrieve all the columns from the Tracks table, but only return 20 rows
+
+3. What is the runtime in milliseconds for the 5th track, entitled "Princess of the Dawn"?
+
+SELECT Milliseconds
+FROM tracks
+WHERE Name = "Princess of the Dawn"
+
+
+Output -
+
+375418
+
