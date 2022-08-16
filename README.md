@@ -2,7 +2,7 @@
 
 ### Queries conducted using : [SQLite](https://www.sqlite.org/index.html) 
 
-### Databases used SQL Queries : 
+### Databases used for SQL Queries : 
 
 #### 1. Chinook Database ER Diagram 
 ![Chinook DB](https://www.sqlitetutorial.net/wp-content/uploads/2015/11/sqlite-sample-database-color.jpg)
