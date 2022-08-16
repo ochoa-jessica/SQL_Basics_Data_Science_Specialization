@@ -63,3 +63,47 @@ FROM salary_range_by_job_classification
 WHERE grade = "Q90H0"
 
 Output - 06/30/2010
+
+6. Sort the Biweekly low rate in ascending order.
+
+SELECT Biweekly_Low_Rate 
+FROM salary_range_by_job_classification
+ORDER BY Biweekly_Low_Rate ASC
+
+7. What Step are Job Codes 0110-0400? 
+
+SELECT Step, Job_Code
+FROM salary_range_by_job_classification
+WHERE Job_Code BETWEEN 0110 AND 0400
+
+Output - 1
+
+8. What is the Biweekly High Rate minus the Biweekly Low Rate for job Code 0170?
+
+SELECT Job_Code, 
+Biweekly_High_Rate,
+Biweekly_Low_Rate,
+(Biweekly_High_Rate - Biweekly_Low_Rate ) AS temp
+FROM salary_range_by_job_classification
+WHERE Job_Code = "0170"
+
+Output - 0
+
+9. What is the Extended Step for Pay Types M, H, and D? 
+
+SELECT Extended_Step,
+Pay_Type
+FROM salary_range_by_job_classification
+WHERE Pay_Type IN ('M', 'H', 'D')
+
+Output - 0 
+
+10. What is the step for Union Code 990 and a Set ID of SFMTA or COMMN? 
+
+SELECT Step,
+Union_Code,
+SetID
+FROM salary_range_by_job_classification
+WHERE Union_Code = "990" AND (SetID = "SFMTA" OR SetID = "COMMN")
+
+Output - 1
