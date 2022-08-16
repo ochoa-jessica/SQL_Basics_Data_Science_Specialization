@@ -1,5 +1,7 @@
 # SQL
 
+### Queries conducted using : [SQLite](https://www.sqlite.org/index.html) 
+
 ### Databases used SQL Queries : 
 
 #### 1. Chinook Database ER Diagram 
