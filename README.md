@@ -1,4 +1,4 @@
-# SQL
+# SQL For Data Science
 
 ### Queries conducted using : [SQLite](https://www.sqlite.org/index.html) 
 
